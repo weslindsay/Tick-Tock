@@ -1,0 +1,1 @@
+../../BEMAnalogClock/Classes/BEMMinuteHand.h

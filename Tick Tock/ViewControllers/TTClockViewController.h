@@ -1,0 +1,3 @@
+@interface TTClockViewController : UIViewController
+
+@end

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TTClockViewController">
+            <connections>
+                <outlet property="analogClock" destination="LUJ-Bt-mA4" id="RjJ-qc-tMq"/>
+                <outlet property="clockDotView" destination="E69-Gy-EHl" id="VWx-48-NFn"/>
+                <outlet property="digitalTimeContainer" destination="ahZ-mc-7mf" id="iel-cp-mUb"/>
+                <outlet property="hoursLabel" destination="nP3-eF-WTA" id="A33-eY-bc0"/>
+                <outlet property="minutesLabel" destination="GS0-8r-NeH" id="vtf-pC-JnU"/>
+                <outlet property="view" destination="iN0-l3-epB" id="iuL-70-muq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahZ-mc-7mf" userLabel="Digital Time Container">
+                    <rect key="frame" x="30" y="390" width="260" height="72"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.94999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GS0-8r-NeH" userLabel="Minutes Label">
+                            <rect key="frame" x="132" y="0.0" width="72" height="72"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.16078431369999999" green="0.20784313730000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="55"/>
+                            <color key="textColor" red="0.86666666670000003" green="0.3803921569" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.94999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nP3-eF-WTA" userLabel="Hours Label">
+                            <rect key="frame" x="56" y="0.0" width="72" height="72"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.16078431369999999" green="0.20784313730000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="55"/>
+                            <color key="textColor" red="0.86666666670000003" green="0.3803921569" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="g89-T0-bgj"/>
+                        <constraint firstAttribute="height" constant="72" id="hpY-I8-TL5"/>
+                    </constraints>
+                </view>
+                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUJ-Bt-mA4" customClass="BEMAnalogClockView">
+                    <rect key="frame" x="30" y="105" width="260" height="260"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="260" id="vR0-Wc-csR"/>
+                        <constraint firstAttribute="width" constant="260" id="x0u-j5-1hK"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E69-Gy-EHl" userLabel="Clock Dot View">
+                    <rect key="frame" x="154" y="229" width="12" height="12"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="0Kj-pN-MPu"/>
+                        <constraint firstAttribute="height" constant="12" id="1hY-gM-sQ2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="ahZ-mc-7mf" secondAttribute="centerX" id="E5f-32-VTy"/>
+                <constraint firstItem="LUJ-Bt-mA4" firstAttribute="centerX" secondItem="E69-Gy-EHl" secondAttribute="centerX" id="GRY-vI-Zdo"/>
+                <constraint firstAttribute="centerX" secondItem="LUJ-Bt-mA4" secondAttribute="centerX" id="LgC-eU-s92"/>
+                <constraint firstAttribute="centerY" secondItem="ahZ-mc-7mf" secondAttribute="centerY" constant="-142" id="Upf-AE-NQM"/>
+                <constraint firstItem="LUJ-Bt-mA4" firstAttribute="centerY" secondItem="E69-Gy-EHl" secondAttribute="centerY" id="auK-PR-ewA"/>
+                <constraint firstAttribute="centerY" secondItem="LUJ-Bt-mA4" secondAttribute="centerY" constant="49" id="c9z-J4-v1n"/>
+                <constraint firstItem="ahZ-mc-7mf" firstAttribute="top" secondItem="LUJ-Bt-mA4" secondAttribute="bottom" constant="25" id="ySs-bZ-mKm"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

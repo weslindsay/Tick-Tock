@@ -1,0 +1,10 @@
+PODS:
+  - BEMAnalogClock (1.0)
+
+DEPENDENCIES:
+  - BEMAnalogClock
+
+SPEC CHECKSUMS:
+  BEMAnalogClock: 315645bd8f93ce3c6eaa08ec198540c7e64e3558
+
+COCOAPODS: 0.32.1
